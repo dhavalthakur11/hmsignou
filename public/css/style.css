@@ -753,6 +753,7 @@ input.input-error { border-color: var(--color-danger); }
 
 /* Form page */
 .form-page-wrapper { max-width: 820px; margin: 0 auto; }
+
 .form-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -768,6 +769,7 @@ input.input-error { border-color: var(--color-danger); }
 .form-group.mb-0 { margin-bottom: 0; }
 
 /* Filter bar */
+
 .filter-row    { display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
 .filter-actions { display: flex; gap: 8px; align-items: center; margin-top: 20px; }
 
