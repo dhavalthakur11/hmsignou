@@ -155,7 +155,7 @@ class RoomController extends Controller {
         $this->redirect('room/index');
     }
 
-    // ── Private helpers ──────────────────────────────────────────────────────
+    // ── Private helpers 
 
     private function validateRoomInput(array $d): array {
         $errors = [];
