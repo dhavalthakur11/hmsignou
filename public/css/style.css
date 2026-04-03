@@ -1,11 +1,4 @@
-/* ============================================================
-   Hotel Management System — Global Stylesheet
-   Sections: Variables → Reset → Layout → Sidebar → Topbar
-             → Cards → Tables → Forms → Buttons → Badges
-             → Auth page → Alerts → Utilities
-   ============================================================ */
-
-/* ── 1. Design tokens ──────────────────────────────────────── */
+/* ── 1. Design tokens  */
 :root {
   --color-primary:       #4f46e5;
   --color-primary-dark:  #3730a3;
@@ -41,7 +34,7 @@
   --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
-/* ── 2. Reset ───────────────────────────────────────────────── */
+/* ── 2. Reset  */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { font-size: 15px; }
@@ -61,7 +54,7 @@ img { max-width: 100%; display: block; }
 button { cursor: pointer; font-family: inherit; }
 input, select, textarea { font-family: inherit; }
 
-/* ── 3. App layout ─────────────────────────────────────────── */
+/* ── 3. App layout */
 .app-body { display: flex; min-height: 100vh; }
 
 .main-wrapper {
@@ -79,7 +72,7 @@ input, select, textarea { font-family: inherit; }
   max-width: 1400px;
 }
 
-/* ── 4. Sidebar ────────────────────────────────────────────── */
+/* ── 4. Sidebar  */
 .sidebar {
   position: fixed;
   top: 0; left: 0;
@@ -181,7 +174,7 @@ input, select, textarea { font-family: inherit; }
   z-index: 999;
 }
 
-/* ── 5. Topbar ─────────────────────────────────────────────── */
+/* ── 5. Topbar */
 .topbar {
   position: sticky; top: 0;
   height: var(--topbar-height);
@@ -284,7 +277,7 @@ input, select, textarea { font-family: inherit; }
 .dropdown-item:hover { background: var(--bg-page); text-decoration: none; }
 .dropdown-item.logout { color: var(--color-danger); }
 
-/* ── 6. Cards ──────────────────────────────────────────────── */
+/* ── 6. Cards  */
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -407,7 +400,7 @@ input, select, textarea { font-family: inherit; }
 .activity-meta   { font-size: .75rem; color: var(--text-muted); }
 .activity-detail { font-size: .78rem; color: var(--text-secondary); }
 
-/* ── 7. Tables ─────────────────────────────────────────────── */
+/* ── 7. Tables */
 .data-table {
   width: 100%;
   border-collapse: collapse;
@@ -434,7 +427,7 @@ input, select, textarea { font-family: inherit; }
 .data-table tbody tr:hover { background: #f8fafc; }
 .empty-row { text-align: center; color: var(--text-muted); padding: 28px !important; }
 
-/* ── 8. Forms ──────────────────────────────────────────────── */
+/* ── 8. Forms  */
 .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 16px; }
 .form-group label { font-size: .85rem; font-weight: 600; color: var(--text-primary); }
 
@@ -483,7 +476,7 @@ input.input-error { border-color: var(--color-danger); }
 .pw-bar.good   { background: var(--color-info); }
 .pw-bar.strong { background: var(--color-success); }
 
-/* ── 9. Buttons ────────────────────────────────────────────── */
+/* ── 9. Buttons  */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
   padding: 9px 18px;
@@ -515,7 +508,7 @@ input.input-error { border-color: var(--color-danger); }
 
 .btn-sm { padding: 5px 12px; font-size: .8rem; }
 
-/* ── 10. Badges ────────────────────────────────────────────── */
+/* ── 10. Badges  */
 .badge {
   display: inline-block;
   padding: 3px 9px;
@@ -530,7 +523,7 @@ input.input-error { border-color: var(--color-danger); }
 .badge-gray   { background: #f1f5f9; color: #475569; }
 .badge-orange { background: #fef3c7; color: #92400e; }
 
-/* ── 11. Auth page ─────────────────────────────────────────── */
+/* ── 11. Auth page  */
 .auth-page { background: var(--bg-page); }
 
 .auth-wrapper {
@@ -604,7 +597,7 @@ input.input-error { border-color: var(--color-danger); }
   color: var(--text-muted);
 }
 
-/* ── 12. Alerts ────────────────────────────────────────────── */
+/* ── 12. Alerts  */
 .alert {
   display: flex; align-items: center; justify-content: space-between; gap: 10px;
   padding: 12px 16px;
@@ -627,11 +620,11 @@ input.input-error { border-color: var(--color-danger); }
 .error-list { padding-left: 18px; }
 .error-list li { margin-bottom: 3px; }
 
-/* ── 13. Utilities ─────────────────────────────────────────── */
+/* ── 13. Utilities  */
 .mt-4 { margin-top: 16px; }
 .mt-6 { margin-top: 24px; }
 
-/* ── 14. Responsive ────────────────────────────────────────── */
+/* ── 14. Responsive  */
 @media (max-width: 900px) {
   .two-col-grid { grid-template-columns: 1fr; }
 }
@@ -661,7 +654,7 @@ input.input-error { border-color: var(--color-danger); }
   .stats-grid { grid-template-columns: 1fr; }
 }
 
-/* ── Room cards ────────────────────────────────────────────── */
+/* ── Room cards  */
 .room-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -795,7 +788,7 @@ input.input-error { border-color: var(--color-danger); }
   .filter-actions   { margin-top: 0; }
 }
 
-/* ── Booking styles ────────────────────────────────────────── */
+/* ── Booking styles  */
 .booking-create-grid {
   display: grid;
   grid-template-columns: 1fr 340px;
@@ -867,7 +860,7 @@ input.input-error { border-color: var(--color-danger); }
   .booking-create-grid { grid-template-columns: 1fr; }
 }
 
-/* ── Invoice ───────────────────────────────────────────────── */
+/* ── Invoice  */
 .invoice-toolbar {
   display: flex; justify-content: space-between; align-items: center;
   margin-bottom: 16px;
@@ -959,7 +952,7 @@ input.input-error { border-color: var(--color-danger); }
   font-size: .875rem; color: var(--text-secondary);
 }
 
-/* ── Modals ────────────────────────────────────────────────── */
+/* ── Modals  */
 .modal-overlay {
   display: none;
   position: fixed; inset: 0;
@@ -989,7 +982,7 @@ input.input-error { border-color: var(--color-danger); }
 .modal-close:hover { color: var(--text-primary); }
 .modal-body { padding: 20px; }
 
-/* ── Receptionist room grid ────────────────────────────────── */
+/* ── Receptionist room grid  */
 .room-status-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
@@ -1024,7 +1017,7 @@ input.input-error { border-color: var(--color-danger); }
 .room-cell-price  { font-size: .7rem; font-weight: 600; }
 .room-cell-status { font-size: .7rem; font-weight: 600; }
 
-/* ── Customer dashboard ────────────────────────────────────── */
+/* ── Customer dashboard  */
 .welcome-banner {
   display: flex; align-items: center; justify-content: space-between;
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
@@ -1063,7 +1056,7 @@ input.input-error { border-color: var(--color-danger); }
 .dot-green { background: var(--color-success); }
 .dot-blue  { background: var(--color-info); }
 
-/* ── Print styles ──────────────────────────────────────────── */
+/* ── Print styles  */
 @media print {
   .no-print, .sidebar, .topbar, .app-footer { display: none !important; }
   .main-wrapper { margin-left: 0 !important; }
@@ -1071,7 +1064,7 @@ input.input-error { border-color: var(--color-danger); }
   body { background: #fff; }
 }
 
-/* ── Reports ───────────────────────────────────────────────── */
+/* ── Reports  */
 .trend-grid {
   display: flex; gap: 24px; flex-wrap: wrap;
 }
@@ -1156,7 +1149,7 @@ input.input-error { border-color: var(--color-danger); }
 }
 .occ-detail-item strong { margin-left: 4px; }
 
-/* ── Star rating (feedback form) ───────────────────────────── */
+/* ── Star rating (feedback form)  */
 .star-rating { display: flex; gap: 4px; margin-bottom: 6px; }
 .star-btn {
   background: none; border: none;
@@ -1173,7 +1166,7 @@ input.input-error { border-color: var(--color-danger); }
 .star-on  { color: var(--color-warning); }
 .star-off { color: var(--border-color); }
 
-/* ── Employee / misc ───────────────────────────────────────── */
+/* ── Employee / misc  */
 .section-label {
   font-size: .78rem; font-weight: 600;
   text-transform: uppercase; letter-spacing: .05em;

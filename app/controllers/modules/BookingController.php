@@ -19,7 +19,7 @@ class BookingController extends Controller {
         $this->billingModel = $this->model('Billing');
     }
 
-    // ── LIST ─────────────────────────────────────────────────────────────────
+    // ── LIST 
 
     /** GET /booking/index — All bookings (staff) or own bookings (customer) */
     public function index(): void {
@@ -57,7 +57,7 @@ class BookingController extends Controller {
         $this->view('booking/index', $data);
     }
 
-    // ── CREATE ────────────────────────────────────────────────────────────────
+    // ── CREATE 
 
     /**
      * GET  /booking/create[?room_id=X&check_in=Y&check_out=Z]
@@ -159,7 +159,7 @@ class BookingController extends Controller {
         ]);
     }
 
-    // ── DETAIL ────────────────────────────────────────────────────────────────
+    // ── DETAIL 
 
     /** GET /booking/view/{id} */
     public function show(string $id = '0'): void {
@@ -174,7 +174,7 @@ class BookingController extends Controller {
         $this->view('booking/view', $data);
     }
 
-    // ── CHECK-IN / CHECK-OUT ──────────────────────────────────────────────────
+    // ── CHECK-IN / CHECK-OUT 
 
     /** POST /booking/checkin/{id} */
     public function checkin(string $id = '0'): void {
@@ -208,7 +208,7 @@ class BookingController extends Controller {
         $this->redirect('billing/invoice/' . $id);
     }
 
-    // ── CANCEL ────────────────────────────────────────────────────────────────
+    // ── CANCEL 
 
     /** POST /booking/cancel/{id} */
     public function cancel(string $id = '0'): void {
@@ -238,7 +238,7 @@ class BookingController extends Controller {
         $this->redirect(user_role() === 'customer' ? 'booking/mybookings' : 'booking/index');
     }
 
-    // ── AJAX: Check Availability ──────────────────────────────────────────────
+    // Check Availability
 
     /**
      * POST /booking/checkavailability
@@ -271,8 +271,8 @@ class BookingController extends Controller {
         exit;
     }
 
-    // ── Private helpers ───────────────────────────────────────────────────────
-
+    // ── Private helpers
+    
     private function findBookingOrFail(int $id): array {
         $booking = $this->bookingModel->findById($id);
         if (!$booking) {

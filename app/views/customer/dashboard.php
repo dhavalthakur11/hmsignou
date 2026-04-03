@@ -4,7 +4,7 @@
  */
 ?>
 
-<!-- ── Welcome banner ───────────────────────────────────────── -->
+<!-- ── Welcome banner  -->
 <div class="welcome-banner mb-4">
     <div class="welcome-text">
         <h2>Welcome back, <?= htmlspecialchars(explode(' ', user_name())[0]) ?>! 👋</h2>
@@ -15,7 +15,7 @@
     </a>
 </div>
 
-<!-- ── Summary cards ─────────────────────────────────────────── -->
+<!-- ── Summary cards  -->
 <div class="stats-grid mb-4">
     <div class="stat-card stat-blue">
         <div class="stat-icon">
@@ -74,7 +74,7 @@
     </div>
 </div>
 
-<!-- ── Two columns: recent bookings + notifications ──────────── -->
+<!-- ── Two columns: recent bookings + notifications  -->
 <div class="two-col-grid mb-4">
 
     <!-- Recent bookings -->
@@ -170,7 +170,7 @@
 
 </div>
 
-<!-- ── Available rooms to browse ─────────────────────────────── -->
+<!-- ── Available rooms to browse  -->
 <?php if (!empty($featured_rooms)): ?>
 <div class="card">
     <div class="card-header">

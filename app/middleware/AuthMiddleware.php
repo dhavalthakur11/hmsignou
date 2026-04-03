@@ -1,7 +1,6 @@
 <?php
 /**
  * Auth Middleware
- * Call requireAuth() at the top of any protected controller method.
  */
 class AuthMiddleware {
 

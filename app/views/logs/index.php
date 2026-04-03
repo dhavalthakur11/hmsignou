@@ -1,4 +1,6 @@
-<?php /** Audit log viewer */ ?>
+<?php 
+/** Audit log viewer */ 
+?>
 
 <div class="card mb-4">
     <div class="card-body">

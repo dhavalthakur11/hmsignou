@@ -5,7 +5,7 @@
  */
 ?>
 
-<!-- ── Stat row ──────────────────────────────────────────────── -->
+<!-- ── Stat row  -->
 <div class="stats-grid mb-4">
     <div class="stat-card stat-green">
         <div class="stat-icon">
@@ -59,7 +59,7 @@
     </div>
 </div>
 
-<!-- ── Two-column: arrivals + departures ────────────────────── -->
+<!-- ── Two-column: arrivals + departures  -->
 <div class="two-col-grid mb-4">
 
     <!-- Today's arrivals -->
@@ -176,7 +176,7 @@
 
 </div>
 
-<!-- ── Live Room Grid ─────────────────────────────────────────── -->
+<!-- ── Live Room Grid -->
 <div class="card">
     <div class="card-header">
         <h3>Live Room Status</h3>

@@ -9,7 +9,7 @@ $occPct = $occ['total'] > 0
     ? round(($occ['booked'] / $occ['total']) * 100) : 0;
 ?>
 
-<!-- ── Revenue cards ─────────────────────────────────────────── -->
+<!-- ── Revenue cards -->
 <div class="stats-grid mb-4">
     <div class="stat-card stat-green">
         <div class="stat-content">
@@ -38,7 +38,7 @@ $occPct = $occ['total'] > 0
     </div>
 </div>
 
-<!-- ── Booking trends ────────────────────────────────────────── -->
+<!-- ── Booking trends -->
 <div class="two-col-grid mb-4">
     <div class="card">
         <div class="card-header"><h3>Booking Trends</h3></div>
@@ -118,7 +118,7 @@ $occPct = $occ['total'] > 0
     </div>
 </div>
 
-<!-- ── Monthly revenue chart (CSS bars) ──────────────────────── -->
+<!-- ── Monthly revenue chart (CSS bars) -->
 <div class="card mb-4">
     <div class="card-header"><h3>Monthly Revenue (last 12 months)</h3></div>
     <div class="card-body">
@@ -147,7 +147,7 @@ $occPct = $occ['total'] > 0
     </div>
 </div>
 
-<!-- ── Occupancy breakdown ───────────────────────────────────── -->
+<!-- ── Occupancy breakdown -->
 <div class="card">
     <div class="card-header"><h3>Room Occupancy Breakdown</h3></div>
     <div class="card-body">

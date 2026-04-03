@@ -1,7 +1,6 @@
 <?php
 /**
  * Feedback Model
- * NOTE: column is 'feedback_comment', not 'comment' (Oracle reserved word).
  */
 class FeedbackModel extends Model {
 

@@ -53,7 +53,6 @@ class LoginController extends Controller {
             $this->redirect('login/index');
         }
 
-        // ── Successful login ──────────────────────────────────────────────
         // Regenerate session ID to prevent session fixation attacks
         session_regenerate_id(true);
 

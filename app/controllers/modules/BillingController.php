@@ -15,7 +15,7 @@ class BillingController extends Controller {
         $this->bookingModel = $this->model('Booking');
     }
 
-    // ── Billing index (staff only) ────────────────────────────────────────────
+    // ── Billing index (staff only)
 
     /** GET /billing/index */
     public function index(): void {
@@ -32,7 +32,7 @@ class BillingController extends Controller {
         ]);
     }
 
-    // ── Invoice ───────────────────────────────────────────────────────────────
+    // ── Invoice 
 
     /**
      * GET /billing/invoice/{booking_id}
@@ -74,7 +74,7 @@ class BillingController extends Controller {
         ]);
     }
 
-    // ── Mark as Paid ─────────────────────────────────────────────────────────
+    // ── Mark as Paid 
 
     /** POST /billing/pay/{bill_id} */
     public function pay(string $billId = '0'): void {
@@ -120,8 +120,7 @@ class BillingController extends Controller {
         $this->redirect('billing/invoice/' . $bill['booking_id']);
     }
 
-    // ── Update Extra Charges ──────────────────────────────────────────────────
-
+    // ── Update Extra Charges
     /** POST /billing/extras/{bill_id} */
     public function extras(string $billId = '0'): void {
         AuthMiddleware::requireStaff();

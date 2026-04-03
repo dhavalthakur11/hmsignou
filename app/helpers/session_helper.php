@@ -7,11 +7,11 @@
 // Start session if not already active
 if (session_status() === PHP_SESSION_NONE) {
     session_set_cookie_params([
-        'lifetime' => 0,           // Until browser closes
+        'lifetime' => 0,           
         'path'     => '/',
-        'secure'   => isset($_SERVER['HTTPS']), // HTTPS only in production
-        'httponly' => true,        // JS cannot access cookie
-        'samesite' => 'Strict',    // CSRF mitigation
+        'secure'   => isset($_SERVER['HTTPS']), 
+        'httponly' => true,        
+        'samesite' => 'Strict',    
     ]);
     session_start();
 }

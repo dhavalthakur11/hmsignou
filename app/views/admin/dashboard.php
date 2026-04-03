@@ -5,7 +5,7 @@
  */
 ?>
 
-<!-- ── Stat Cards ─────────────────────────────────────────────────────────── -->
+<!-- ── Stat Cards -->
 <div class="stats-grid">
 
     <div class="stat-card stat-blue">
@@ -70,7 +70,7 @@
 
 </div>
 
-<!-- ── Room occupancy bar ────────────────────────────────────────────────── -->
+<!-- ── Room occupancy bar  -->
 <?php
     $occupancyPct = $total_rooms > 0
         ? round(($booked_rooms / $total_rooms) * 100)
@@ -96,7 +96,7 @@
     </div>
 </div>
 
-<!-- ── Two-column: recent bookings + recent activity ─────────────────────── -->
+<!-- ── Two-column: recent bookings + recent activity  -->
 <div class="two-col-grid mt-4">
 
     <!-- Recent bookings -->
@@ -178,7 +178,7 @@
 
 </div>
 
-<!-- ── Quick actions ─────────────────────────────────────────────────────── -->
+<!-- ── Quick actions  -->
 <div class="card mt-4">
     <div class="card-header"><h3>Quick Actions</h3></div>
     <div class="card-body">

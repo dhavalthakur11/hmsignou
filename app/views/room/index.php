@@ -4,7 +4,7 @@
  */
 ?>
 
-<!-- ── Mini stats row ─────────────────────────────────────── -->
+<!-- ── Mini stats row -->
 <div class="stats-grid stats-grid-4 mb-4">
     <?php
     $statDefs = [
@@ -23,7 +23,7 @@
     <?php endforeach; ?>
 </div>
 
-<!-- ── Filter bar ────────────────────────────────────────────── -->
+<!-- ── Filter bar -->
 <div class="card mb-4">
     <div class="card-body">
         <form method="GET" action="<?= base_url('room/index') ?>" class="filter-form">
@@ -74,7 +74,7 @@
     </div>
 </div>
 
-<!-- ── Room cards grid ───────────────────────────────────────── -->
+<!-- ── Room cards grid -->
 <?php if (empty($rooms)): ?>
     <div class="empty-state">
         <div class="empty-icon">🏨</div>

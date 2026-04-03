@@ -1,4 +1,6 @@
-<?php /** Notification inbox */ ?>
+<?php 
+/** Notification inbox */ 
+?>
 <div class="card">
     <div class="card-header">
         <h3>Notifications</h3>
